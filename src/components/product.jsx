@@ -5,7 +5,7 @@ class Product extends Component {
     state = {  } 
     render() { 
         return <div className="card" styles={{width: '18rem'}}>
-  <img src={"/assets/img/" + this.props.image} className="card-img-top" alt="..."  style={{ height: '200px', width: '300px' }} />
+  <img src={"/assets/img/" + this.props.image} className="card-img-top" alt="..." style={{ height: '250px', objectFit: 'cover' }}/>
   <div className="card-body">
     <h5 className="card-title">{this.props.title}</h5>
     <p className="card-text">{this.props.description}.</p>
